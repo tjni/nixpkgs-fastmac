@@ -6,4 +6,7 @@ echo Edit script-mac.sh in your fastmac repo to auto-run commands in your Mac in
 echo >> ~/.bash_profile
 
 sh <(curl -L https://nixos.org/nix/install) --no-channel-add
+
+source /nix/var/nix/profiles/default/etc/profile.d/nix.sh
+export PATH="/nix/var/nix/profiles/default/bin:$PATH"
 source ./script-common.sh

@@ -1,5 +1,3 @@
-source /nix/var/nix/profiles/default/etc/profile.d/nix.sh
-export PATH="/nix/var/nix/profiles/default/bin:$PATH"
 nix-env -i \
     -A bat \
     -A exa \
